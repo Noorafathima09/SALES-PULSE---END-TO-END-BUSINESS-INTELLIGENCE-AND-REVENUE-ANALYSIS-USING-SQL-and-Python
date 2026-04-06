@@ -1,130 +1,139 @@
-# Sales Pulse – End-to-End Business Intelligence & Revenue Analysis
+# 📊 Spare Parts Sales Analysis | SQL Project
 
-## Project Overview
+## 🔍 Project Overview
+This project analyzes multi-branch spare parts and service sales data to evaluate revenue performance, identify business trends, and uncover key drivers of revenue.
 
-Sales Pulse is a comprehensive end-to-end business intelligence project that analyzes multi-branch spare parts and service sales data at invoice and line-item level. Using **SQL for data modeling and analysis** and **Python for visualization**, this project transforms raw ERP-style transactional data into actionable, decision-ready insights.
-
-The analysis focuses on revenue performance, operational efficiency, customer demand patterns, and business risk—mirroring how real-world analytical work is delivered to decision-makers.
-
----
-
-## Business Questions Answered
-
-* How is the business performing overall, and where is revenue coming from?
-* Which branches drive volume vs. value?
-* How dependent is revenue on spare parts, services, or a few high-value invoices?
-* Are transactions volume-driven or value-driven?
-* Where do revenue concentration risks and growth opportunities exist?
+The goal is to transform raw ERP sales data into meaningful business insights and actionable recommendations that support better decision-making.
 
 ---
 
-## Tools & Technologies
+## 💼 Business Problem
+The business operates across multiple branches but lacks clear visibility into:
 
-* **SQL (MySQL)** – data cleaning, feature engineering, KPI design, and analysis
-* **Python (Pandas, Matplotlib)** – exploratory and presentation-ready visualizations
-* **GitHub** – version control and project documentation
+- Which branches drive the most revenue  
+- Whether revenue is growing or stagnating  
+- The contribution of services vs spare parts  
+- Opportunities to increase revenue and efficiency  
 
----
-
-## Analytical Workflow
-
-### Step 1: Data Understanding & Schema Alignment
-
-* Audited multiple branch-level tables
-* Identified schema inconsistencies
-* Unified data into a single analytical view while preserving branch-specific attributes
-
-### Step 2: Data Profiling & Quality Audit
-
-* Validated transaction counts and date coverage
-* Identified missing, malformed, and structurally incomplete fields
-* Confirmed invoice-level granularity
-
-### Step 3: Data Cleaning & Feature Engineering
-
-* Removed non-transactional rows
-* Standardized dates and numeric fields
-* Engineered **Item Category (Service vs Spare Part)**
-* Correctly labeled missing branch entries as **Counter Sales**
-
-### Step 4: Business Performance & Revenue Analysis
-
-* Overall revenue and transaction scale
-* Monthly revenue trends and seasonality
-* Branch-level revenue contribution
-* Revenue mix by services vs spare parts
-
-### Step 5: Profitability & Operational Efficiency
-
-* Average revenue per invoice and per line item
-* Branch billing efficiency comparison
-* Category-level value density
-* Identification of premium invoices
-
-### Step 6: Customer & Demand Intelligence
-
-* Revenue concentration analysis
-* High-impact (VIP-style) invoice identification
-* Bulk vs. one-time transaction behavior
-* Risk and opportunity interpretation
-
-### Step 7: KPI Framework Design
-
-* Revenue health metrics
-* Customer and demand KPIs
-* Operational efficiency indicators
-* Risk monitoring metrics
-
-### Step 8: Decision & Action Blueprint
-
-* Revenue risk mitigation strategies
-* Upselling and bundling opportunities
-* Branch optimization roadmap
-* Data process improvement actions
-
-### Step 9: Executive Conclusion
-
-* Consolidated insights into a decision-ready business narrative
-* Demonstrated analytical maturity beyond descriptive reporting
+This analysis aims to bridge that gap using data-driven insights.
 
 ---
 
-## Key Insights
+## 🗂️ Dataset Description
+The dataset contains transactional sales data from multiple branches, including:
 
-* The business operates on a **high-volume, mid-value billing model**
-* **Spare parts drive ~75% of revenue**, acting as the financial engine
-* **Services support engagement and retention** but are under-monetized
-* A small percentage of invoices contribute disproportionately to revenue
-* Revenue dependence on a primary branch introduces operational risk
+- Branch information  
+- Invoice-level transactions  
+- Item details (spare parts & services)  
+- Revenue and pricing data  
+- Dates and customer information  
 
----
-
-## Value Delivered
-
-* Converts raw transactional data into executive-level intelligence
-* Identifies growth levers without increasing transaction volume
-* Highlights revenue concentration risks early
-* Provides a scalable KPI framework for long-term monitoring
+The raw data required cleaning due to:
+- Missing values  
+- Inconsistent formats  
+- Presence of non-transactional summary rows  
 
 ---
 
-## Why This Project Stands Out
+## 🧹 Data Cleaning & Preparation
+To ensure reliable analysis:
 
-This project goes beyond basic SQL queries by:
+- Combined multiple branch datasets into a unified structure  
+- Converted date and numeric fields into proper formats  
+- Handled missing branch values (labeled as *Counter Sale*)  
+- Removed invalid and system-generated summary rows (e.g., “Total”)  
+- Created a derived category:
+  - **Service**
+  - **Spare Parts**
 
-* Preserving real-world data imperfections
-* Designing KPIs and decision frameworks
-* Translating analysis into clear business actions
-* Demonstrating how analysts think, not just query
-
----
-
-## Author
-
-**Hafsa Shafeek**
-Aspiring Data Analyst | SQL • Python • Business Intelligence
+This resulted in a clean, analysis-ready dataset.
 
 ---
 
-*This project is designed to reflect professional, client-ready analytical work rather than academic or toy datasets.*
+## 📌 Key Findings
+
+1. **Branch Performance**
+   - Palayam generates the highest revenue (~₹7.6M), followed by Muttathara (~₹5.1M).
+   - Counter sales contribute a smaller but meaningful share (~₹1.7M).
+
+2. **Revenue Trend**
+   - Revenue remains relatively stable across months, indicating consistent demand but limited growth.
+
+3. **Revenue Distribution**
+   - Spare parts contribute the majority of revenue (~75%), while services contribute ~25%.
+
+4. **Business Model**
+   - The business operates on a high-volume, mid-value model with a large number of invoices and moderate average transaction value.
+
+---
+
+## 🧠 Key Insights
+
+### 1. Branch Performance & Risk
+Revenue is unevenly distributed across branches, with strong dependence on top-performing locations.  
+This creates operational risk if performance declines in key branches.
+
+---
+
+### 2. Revenue Stability & Growth Limitation
+Stable monthly revenue indicates consistent demand but also suggests a lack of growth strategy or expansion efforts.
+
+---
+
+### 3. Revenue Opportunity (Service Segment)
+Services generate lower revenue despite similar transaction volumes, highlighting an opportunity to improve pricing, bundling, or upselling strategies.
+
+---
+
+### 4. Monetization Opportunity
+The current high-volume model indicates strong customer flow, but revenue can be increased by improving average transaction value.
+
+---
+
+## 🚀 Business Recommendations
+
+### 1. Optimize Branch Performance
+- Replicate successful strategies from top-performing branches (Palayam)  
+- Implement branch-level performance tracking and targets  
+
+---
+
+### 2. Drive Revenue Growth
+- Launch targeted marketing campaigns during slower periods  
+- Use historical sales data to plan seasonal promotions  
+
+---
+
+### 3. Increase Service Revenue
+- Bundle services with spare parts  
+- Introduce premium service packages  
+- Promote preventive maintenance services  
+
+---
+
+### 4. Improve Revenue Per Transaction
+- Implement upselling and cross-selling strategies  
+- Review pricing for high-value invoices  
+- Focus on increasing average order value  
+
+---
+
+## ✅ Conclusion
+This analysis highlights key revenue drivers, operational risks, and growth opportunities within the business.
+
+By improving service monetization, optimizing branch performance, and increasing transaction value, the business can significantly enhance overall revenue and profitability.
+
+“This project demonstrates my ability to clean raw business data, identify hidden issues, and deliver actionable insights.”
+---
+
+## 🛠️ Tools Used
+- SQL (MySQL)
+- Data Cleaning & Transformation
+- Business Analysis
+
+---
+
+## 📬 Author
+HAFSA R ~
+Aspiring Data Analyst focused on solving real-world business problems using data.
 
