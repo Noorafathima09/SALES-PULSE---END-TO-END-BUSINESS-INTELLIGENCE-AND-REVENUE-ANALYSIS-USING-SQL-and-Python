@@ -1,4 +1,4 @@
-# 📊 Sales Performance Dashboard | Spare Parts Business (SQL + Power BI)
+# 📊 Sales Performance Analysis & Dashboard | Spare Parts Business (SQL + Power BI)
 
 ## ⚡ Quick Snapshot
 
