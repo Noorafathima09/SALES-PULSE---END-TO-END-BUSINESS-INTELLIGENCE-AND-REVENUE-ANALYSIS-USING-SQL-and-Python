@@ -162,12 +162,11 @@ Increasing invoice value through cross-selling and upselling could improve total
 
 ---
 
-## 📷 Dashboard Preview
+## 📊 Dashboard Preview
 
 > Interactive dashboard includes slicers, KPI cards, trend analysis, branch comparison, category split, and top products.
 
-## 📊 Dashboard Preview
-![Dashboard](dashboard.png)
+![Dashboard](Dashboard.PNG)
 
 ---
 
