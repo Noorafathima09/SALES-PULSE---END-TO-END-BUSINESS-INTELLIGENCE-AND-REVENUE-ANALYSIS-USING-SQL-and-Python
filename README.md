@@ -1,16 +1,28 @@
-# 📊 Spare Parts Sales Analysis Dashboard | SQL + Power BI Project
+# 📊 Sales Performance Dashboard | Spare Parts Business (SQL + Power BI)
+
+## ⚡ Quick Snapshot
+
+- ₹14.53M total revenue analyzed  
+- 16K+ transactions processed  
+- 2 branches + counter sales evaluated  
+- Identified 74% revenue from spare parts  
+- Built interactive dashboard for decision-making  
+
+---
 
 ## 🔍 Project Overview
-This end-to-end analytics project analyzes multi-branch spare parts and service sales data to uncover revenue drivers, branch performance trends, product contribution, and growth opportunities.
 
-The project demonstrates how raw ERP transactional data can be transformed into actionable business intelligence using **SQL for data preparation and analysis** and **Power BI for interactive dashboard reporting**.
+I help businesses turn raw sales data into clear insights, track performance, and identify revenue growth opportunities using SQL and Power BI.
+
+The analysis focuses on multi-branch spare parts and service sales data to uncover revenue drivers, performance trends, and optimization opportunities.
 
 ---
 
 ## 💼 Business Problem
-The business operates across multiple branches but lacked a clear and centralized view of performance.
 
-Key challenges included:
+The business lacked clear visibility into performance across branches, products, and revenue streams.
+
+Key questions addressed:
 
 - Which branches generate the highest revenue?
 - Is revenue growing consistently over time?
@@ -18,155 +30,181 @@ Key challenges included:
 - Which products drive the most sales?
 - Where are opportunities to improve revenue and efficiency?
 
-This project solves these challenges through data-driven analysis and dashboard reporting.
-
 ---
 
 ## 🗂️ Dataset Description
+
 The dataset contains multi-branch sales transaction records, including:
 
-- Branch details
-- Invoice-level transactions
-- Product / item information
-- Spare parts & service sales
-- Quantity sold
-- Customer records
-- Dates and posting periods
-- Revenue / pricing values
+- Branch details  
+- Invoice-level transactions  
+- Product / item information  
+- Spare parts & service sales  
+- Quantity sold  
+- Customer data  
+- Dates and posting periods  
+- Revenue and pricing values  
 
-### Raw Data Issues
-The original data required preparation due to:
+### Data Challenges
 
-- Missing values
-- Inconsistent formatting
-- Duplicate-like summary rows
-- Invalid records such as “Total”
-- Mixed categories requiring classification
+- Missing values  
+- Inconsistent formats  
+- Invalid summary rows (e.g., “Total”)  
+- Mixed categories requiring classification  
 
 ---
 
 ## 🧹 Data Cleaning & Preparation (SQL)
 
-To create a reliable analysis-ready dataset:
-
-- Combined multiple branch datasets into one unified table
-- Standardized date, numeric, and text formats
-- Handled missing branch values as **Counter Sale**
-- Removed invalid/system-generated summary rows
-- Created derived product categories:
-  - **Spare Parts**
-  - **Service**
-- Cleaned branch names for reporting consistency
-- Prepared fields for dashboard KPIs and filtering
+- Combined multi-branch datasets into one unified structure  
+- Cleaned missing and inconsistent values  
+- Removed invalid/system-generated rows  
+- Standardized date, numeric, and text formats  
+- Created product categories: **Spare Parts** and **Service**  
+- Cleaned branch names for reporting consistency  
 
 ---
 
-## 📊 Power BI Dashboard Features
+## 📊 Power BI Dashboard
 
-An interactive dashboard was built to monitor business performance with slicers for:
+The dashboard enables quick decision-making through interactive filtering and clear KPI tracking.
 
-- Category
-- Branch
-- Year
+### Filters
+
+- Category  
+- Branch  
+- Year  
 
 ### Key KPIs
 
-- **Total Revenue:** ₹14.53M
-- **Total Invoices:** 16K
-- **Average Invoice Value:** ₹884.59
-- **Total Quantity Sold:** 90.09K
-- **Distinct Customers:** 4K
+- **Total Revenue:** ₹14.53M  
+- **Total Invoices:** 16K  
+- **Average Invoice Value:** ₹884.59  
+- **Total Quantity Sold:** 90.09K  
+- **Distinct Customers:** 4K  
 
-### Visual Analysis Includes
+### Visual Analysis
 
-- Revenue trend by month
-- Revenue by branch
-- Revenue by category
-- Top products by revenue
+- Monthly revenue trend  
+- Branch performance comparison  
+- Category-wise revenue distribution  
+- Top products by revenue  
+
+---
+
+## 📷 Dashboard Preview
+
+![Dashboard](Dashboard.PNG)
+
+*Note: January shows lower revenue due to partial data availability.*
 
 ---
 
 ## 📌 Key Findings
 
+The analysis reveals a stable but optimization-ready revenue model with clear opportunities for growth.
+
 ### 1. Branch Performance
-- **Palayam** is the top-performing branch (~₹7.7M)
-- **Muttathara** follows (~₹5.1M)
-- **Counter Sale** contributes (~₹1.7M)
+
+- **Palayam** is the top-performing branch (~₹7.7M)  
+- **Muttathara** follows (~₹5.1M)  
+- **Counter Sale** contributes (~₹1.7M)  
 
 ### 2. Revenue Trend
-Revenue remained relatively stable across most months, indicating consistent demand with room for expansion.
+
+Revenue remains stable across most months, indicating consistent demand with limited growth.
 
 ### 3. Category Contribution
-- **Spare Parts:** ~74%
-- **Service:** ~26%
+
+- **Spare Parts:** ~74%  
+- **Service:** ~26%  
 
 Spare parts are the primary revenue driver.
 
 ### 4. Product Concentration
-A limited number of products generate a significant share of revenue, creating upsell and inventory planning opportunities.
+
+A small number of products contribute significantly to total revenue, creating opportunities for upselling and better inventory planning.
 
 ### 5. Business Model Insight
-The company operates on a **high-volume, mid-ticket-size model** with steady invoice flow.
+
+The business operates on a **high-volume, mid-ticket-size model** with steady transaction flow.
 
 ---
 
 ## 🧠 Business Insights
 
 ### Revenue Dependence Risk
-A large share of revenue comes from top branches, increasing concentration risk if branch performance declines.
+
+High reliance on top-performing branches creates operational risk.
 
 ### Service Revenue Opportunity
-Services generate lower revenue compared to spare parts, suggesting potential in pricing, bundling, and premium offerings.
+
+Low contribution from services indicates potential in pricing, bundling, and premium offerings.
 
 ### Growth Limitation
-Stable sales patterns suggest operational consistency but limited growth initiatives.
+
+Stable trends suggest consistent operations but lack of growth initiatives.
 
 ### Average Order Value Potential
-Increasing invoice value through cross-selling and upselling could improve total revenue without needing large customer growth.
+
+Increasing invoice value through cross-selling and upselling can improve revenue without increasing customer base.
 
 ---
 
 ## 🚀 Recommendations
 
+Based on the analysis, the following actions can improve business performance:
+
 ### 1. Strengthen Lower Performing Branches
-- Replicate successful branch practices
-- Set branch-wise performance KPIs
+
+- Replicate strategies from top-performing branches  
+- Set branch-level performance KPIs  
 
 ### 2. Grow Service Revenue
-- Bundle services with spare parts
-- Offer maintenance packages
-- Improve service pricing strategy
+
+- Bundle services with spare parts  
+- Introduce maintenance packages  
+- Optimize service pricing  
 
 ### 3. Increase Average Invoice Value
-- Product recommendations at checkout
-- Cross-sell complementary items
-- Focus on premium SKUs
+
+- Cross-sell complementary products  
+- Promote premium items  
+- Improve checkout recommendations  
 
 ### 4. Improve Revenue Growth
-- Seasonal promotions
-- Branch campaigns
-- Customer retention strategies
 
-### 5. Monitor Top Products
-- Ensure stock availability
-- Promote best-selling SKUs
-- Reduce overdependence through diversification
+- Run seasonal promotions  
+- Execute branch-level campaigns  
+- Focus on customer retention  
+
+### 5. Optimize Top Products Strategy
+
+- Ensure stock availability  
+- Promote best-selling items  
+- Reduce overdependence through diversification  
+
+---
+
+## 💼 How This Helps a Business
+
+This type of analysis helps businesses:
+
+- Understand where revenue is coming from  
+- Identify underperforming branches  
+- Improve service monetization  
+- Increase average transaction value  
+- Make faster, data-driven decisions  
+
+I focus on delivering clear, practical insights that support business growth.
 
 ---
 
 ## 🛠️ Tools Used
 
-- **SQL (MySQL)** – Data cleaning, transformation, analysis
-- **Power BI** – Dashboard design & business reporting
-- **Excel / CSV** – Raw data handling
-
----
-
-## 📊 Dashboard Preview
-
-> Interactive dashboard includes slicers, KPI cards, trend analysis, branch comparison, category split, and top products.
-
-![Dashboard](Dashboard.PNG)
+- **SQL (MySQL)** – Data cleaning, transformation, analysis  
+- **Power BI** – Dashboard design & reporting  
+- **Excel / CSV** – Data handling  
 
 ---
 
@@ -174,18 +212,21 @@ Increasing invoice value through cross-selling and upselling could improve total
 
 This project demonstrates my ability to:
 
-- Clean messy business data
-- Solve reporting problems
-- Build structured SQL analysis
-- Create professional Power BI dashboards
-- Translate numbers into business decisions
-- Deliver actionable recommendations
+- Clean messy business data  
+- Perform structured data analysis  
+- Build interactive dashboards  
+- Extract meaningful business insights  
+- Translate data into actionable decisions  
+- Designed with real-world business decision-making in mind  
 
 ---
 
 ## 📬 Author
 
-**HAFSA R**  
-Aspiring Data Analyst focused on solving real-world business problems through data.
+**Hafsa R**  
+Data Analyst (SQL | Power BI)  
+Focused on Sales & Business Insights  
+
+📩 Open to freelance opportunities
 
 
